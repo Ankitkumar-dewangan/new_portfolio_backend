@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-3xvfxz&z**c!ikz+uy*)a*0z8wwk@1_2%l$0@%@1)m3(jh08=v
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['newportfoliobackend-5mi4.onrender.com']
+# ALLOWED_HOSTS = ['newportfoliobackend-5mi4.onrender.com']
+ALLOWED_HOSTS = [
+    'newportfoliobackend-5mi4.onrender.com',
+    'my-home-110j.onrender.com'
+]
 
 
 # Application definition
@@ -142,7 +146,7 @@ STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Example for React frontend
     "http://127.0.0.1:3000",
-    "https://my-home-110j.onrender.com/",
+    "https://my-home-110j.onrender.com",
 ]
 
 
