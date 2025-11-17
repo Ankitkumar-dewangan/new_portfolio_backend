@@ -28,11 +28,13 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['newportfoliobackend-5mi4.onrender.com']
-ALLOWED_HOSTS = [
-    'newportfoliobackend-5mi4.onrender.com',
-    'my-home-110j.onrender.com'
-]
+ALLOWED_HOSTS = ["newportfoliobackend-5mi4.onrender.com", "localhost", "127.0.0.1"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://newportportfoliobackend-5mi4.onrender.com",
+    "https://new-portfolio-frontend-eta.vercel.app"
+    
+]
 
 # Application definition
 
@@ -146,7 +148,7 @@ STATIC_URL = 'static/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Example for React frontend
     "http://127.0.0.1:3000",
-    "https://new-portfolio-frontend-eta.vercel.app/",
+    "https://new-portfolio-frontend-eta.vercel.app",
 ]
 
 
